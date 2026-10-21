@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+section {
+  padding: 60px 8%;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #14331f;
+}
+
+/* navbar */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 8%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #1f7a4d;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+}
+
+nav a:hover {
+  color: #1f7a4d;
+}
+
+/* hero */
+.hero {
+  background: #1f7a4d;
+  color: white;
+  text-align: center;
+  padding: 100px 8%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffc83d;
+  color: #222;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e6b02e;
+}
+
+/* how it works */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  flex: 1 1 200px;
+  background: #f1f5f2;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #1f7a4d;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  margin-bottom: 8px;
+}
+
+/* about */
+.about {
+  background: #f1f5f2;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  text-align: center;
+}
+
+/* contact form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  height: 110px;
+}
+
+#form-message {
+  text-align: center;
+  margin-top: 12px;
+  color: #1f7a4d;
+}
+
+/* footer */
+footer {
+  background: #14331f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
