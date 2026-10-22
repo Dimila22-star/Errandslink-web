@@ -1,0 +1,11 @@
+{
+  "requests": [
+    {
+      "id": "1",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "message": "Looking for fresh organic tomatoes.",
+      "createdAt": "2026-10-22T08:00:00.000Z"
+    }
+  ]
+}
