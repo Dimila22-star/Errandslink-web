@@ -3,72 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ErrandLink</title>
+  <title>ErrandLink | Local Market Shopping & Delivery</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <h2 class="logo">ErrandLink</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#how">How it works</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="WhatsApp Channel.jpg" alt="ErrandLink Logo" class="nav-logo">
+        <span class="brand-name">ErrandLink</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <h1>Can't get to the market? We'll go for you.</h1>
-    <p>Send us a photo of what you want. Sellers tell us what they have and their price, and we bargain for you, buy it and bring it to your door.</p>
-    <a href="#contact" class="btn">Request an item</a>
+    <div class="hero-content">
+      <h1>Can't get to the market? We'll go for you.</h1>
+      <p>Send us a photo of what you want. Sellers share their prices, we bargain on your behalf, and deliver right to your doorstep.</p>
+      <a href="#contact" class="btn">Request an Item</a>
+    </div>
   </section>
 
-  <section id="how">
-    <h2>How it works</h2>
-    <div class="steps">
-      <div class="step">
-        <span>1</span>
-        <h3>Send a photo</h3>
-        <p>Upload a picture of the item and tell us roughly what you can pay.</p>
-      </div>
-      <div class="step">
-        <span>2</span>
-        <h3>Sellers reply</h3>
-        <p>Sellers in the market see your request and say if they have it and how much.</p>
-      </div>
-      <div class="step">
-        <span>3</span>
-        <h3>We bargain</h3>
-        <p>We chat with the sellers and push the price down as far as we can.</p>
-      </div>
-      <div class="step">
-        <span>4</span>
-        <h3>We deliver</h3>
-        <p>We buy it, check that it's good quality, and send it to you.</p>
-      </div>
+  <section id="how" class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <article class="step-card">
+        <span class="step-number">1</span>
+        <h3>Send a Photo</h3>
+        <p>Upload a picture of the item and let us know your budget.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">2</span>
+        <h3>Sellers Reply</h3>
+        <p>Local market vendors check availability and share their offers.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">3</span>
+        <h3>We Bargain</h3>
+        <p>We negotiate with sellers to secure the best possible deal for you.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">4</span>
+        <h3>We Deliver</h3>
+        <p>We inspect the item for quality and bring it straight to you.</p>
+      </article>
     </div>
   </section>
 
   <section id="about" class="about">
-    <h2>About us</h2>
-    <p>Shopping in a busy market eats up your whole day, and you never really know if you got a fair price. ErrandLink started from that problem.</p>
-    <p>We charge a small fee for the errand. If you'd rather see the goods yourself, we can also take you to the seller for a little extra.</p>
+    <div class="about-card">
+      <h2>About Us</h2>
+      <p>Navigating crowded markets eats up your time, and finding fair prices isn't always easy. ErrandLink was created to simplify local shopping.</p>
+      <p>We charge a small service fee for every errand. Prefer to shop in person? We can also escort you directly to verified sellers for a small extra charge.</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact us</h2>
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your name" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <textarea id="message" placeholder="What are you looking for?" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-    <p id="form-message"></p>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <img src="WhatsApp Channel.jpg" alt="All In One Market" class="contact-img">
+      </div>
+
+      <div class="contact-card">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="What item are you looking for?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-full">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>ErrandLink 2026. Nairobi, Kenya</p>
+    <p>&copy; 2026 ErrandLink. Nairobi, Kenya.</p>
   </footer>
 
   <script src="index.js"></script>
