@@ -4,7 +4,7 @@ const formMessage = document.getElementById("form-message");
 const API_URL = "";// Change from localhost:
 const API_URL = "https://errandslink-api.onrender.com/requests";
 
-const API_URL = "https://errandslink-api.onrender.com/requests";
+const API_URL = "https://dimila22-star.github.io/Errandslink-web/";
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
