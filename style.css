@@ -176,8 +176,9 @@ nav {
 .about {
   position: relative;
   background: linear-gradient(rgba(241, 245, 242, 0.90), rgba(241, 245, 242, 0.90)),
-              url('download.jpg') no-repeat center center / cover;
+              url('hero-bg.jpg') no-repeat center center / cover;
 }
+
 
 .about-card {
   max-width: 720px;
@@ -191,7 +192,6 @@ nav {
   color: #111;
 }
 
-/* Contact Us Section */
 .contact-wrapper {
   display: flex;
   align-items: center;
